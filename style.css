@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: rgb(49, 49, 49);
+}
+.container{
+    background-color: rgba(0, 0, 0,.4);
+    border: 2rem solid black;
+    padding: 30px;
+    width: 50%;
+    min-height: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #888888;
+}
+.image{
+    display: flex;
+}
+.image h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(41, 136, 208);
+    padding: 30px;
+}
+.image img{
+    width: 20%;
+    height: 20%;
+}
+.text{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.text >h1{
+    color: rgb(224, 223, 224);
+    padding: 10px 0;
+    border-bottom: 1px solid black ;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text >p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(177, 177, 177);
+}
+.newQuote{
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.newQuote > p{
+    background: rgb(228, 227, 227);
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .5s;    
+}
+.newQuote >p:hover{
+    background: yellowgreen;
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 90%;
+    }
+}
